@@ -1,0 +1,776 @@
+/* @charset "utf-8"; */
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
+/* CSS Document */
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
+
+* { 
+    margin:0; padding:0; 
+}
+
+img { 
+    border: none; 
+}
+
+a { 
+    text-decoration: none; 
+}
+
+li { 
+    list-style: none; 
+}
+
+body { 
+    font-size: 14px; 
+    color: #666; 
+    font-family: "맑은 고딕";
+    margin: 0 auto;
+    padding: 0;
+}
+
+.wrap { 
+    width: 96%; 
+    margin: 0 auto; 
+    position: relative; 
+}
+
+html, body { 
+    height: 100%; 
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
+/* index - intro */
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
+
+#intro { 
+    background: #ff6666; 
+    background-size: cover; 
+    text-align: center; 
+}
+
+#intro a img { 
+    width: 100%; 
+    height: auto;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
+/*main - main home*/
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
+
+header { 
+    padding: 12px 0 5px;     
+    border-bottom: 2px solid #ff6666; 
+    width: 100%; 
+    background: #fff; 
+    position: fixed; 
+    z-index: 100; 
+}
+
+header h1 { 
+    text-align: center; 
+}
+
+header h1 a img { 
+    width: 145px; 
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+
+header > a:first-of-type img { 
+    width: 30px; 
+    height: auto; 
+    position: absolute; 
+    left: 2%; 
+    top: 15px; 
+}
+
+header > a:last-of-type img { 
+    width: 30px; 
+    height: auto; 
+    position: absolute; 
+    right: 2%; 
+    top: 13px; 
+}
+
+#main_cont1 { 
+    border-bottom: 16px solid #eee; 
+    padding-top: 52px; 
+}
+
+#main_cont1 a img { 
+    width: 100%; 
+    height: auto; 
+    display: block; 
+}
+
+#main_cont1 p { 
+    position: absolute; 
+    top: 110px; 
+    padding-left: 20px; 
+    font-size: 1.8em; 
+    font-weight: bold; 
+    color: #fff; 
+    line-height: 1.2; 
+}
+
+#main_cont1 p span { 
+    font-weight: normal; 
+    font-size: 12px; 
+}
+
+#footer1 {
+    border-top: 2px solid #ff6666; 
+    position: fixed; 
+    bottom: 0; 
+    width: 100%; 
+    background: #fff; 
+    z-index: 10; 
+    height: 75px; 
+}
+
+#footer1 ul { 
+    text-align: center; 
+}
+
+#footer1 ul:after { 
+    content: ""; 
+    clear: both; 
+    display: block; 
+    height: 0; 
+    visibility: hidden; 
+}
+
+#footer1 ul li { 
+    float: left; 
+    width: 25%; 
+}
+
+#footer1 ul li a { 
+    display: block; 
+    height: 100%; 
+    padding: 12px 0 10px; 
+}
+
+#footer1 ul li a img { 
+    width: 30px; 
+    height: auto;
+}
+
+#footer1 ul li a p { 
+    color: #666; 
+    font-size: 13px; 
+    margin-top: 5px;
+    
+}
+
+body > div { 
+    height: 65px; 
+    background: #eee; 
+}
+
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
+/*search*/
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
+
+#search { 
+    padding-top: 52px; 
+    width: 100%; 
+}
+
+#search > #bar { 
+    background: #eee; 
+    padding: 9px 3% 5px 3%; 
+    position: relative; 
+}
+
+#search > #bar input:first-of-type { 
+    width: 100%; 
+    height: 38px; 
+    padding-left: 8px; 
+    border: 1px solid #999; 
+    font-size: 14px; 
+}
+
+#search > #bar input:last-of-type { 
+    position: absolute; 
+    right: 4%; 
+    top: 19px; 
+    width: 27px; 
+    height: 27px; 
+    background: url(images/search_mini.png) no-repeat center; 
+    background-size: auto; 
+    border: none; 
+}
+
+#search #title { 
+    width: 100%; 
+    text-align: center; 
+}
+
+#search #title:after { 
+    content: ""; 
+    clear: both; 
+    display: block; 
+    height: 0; 
+    visibility: hidden; 
+}
+
+#search #title li { 
+    float: left; 
+    width: 50%; 
+}
+
+#search #title li a:link, 
+#search #title li a:visited { 
+    display: block; 
+    height: 55px; 
+    line-height: 55px; 
+    font-size: 16px; 
+    color: #666; 
+    font-weight: bold; 
+}
+
+#search #title li a:hover, 
+#search #title li a:active, 
+#search #title li a:focus { 
+    color:#ff6666; 
+    border-bottom: 4px solid #ff6666; 
+    box-sizing: border-box; 
+}
+
+#search #title { 
+    color: #ff6666; 
+    border-bottom: 1px solid gray; 
+    box-sizing: border-box;    
+}
+
+#search #list li { 
+    border-bottom: 1px solid #ddd;
+}
+
+#search #list li a { 
+    color: #666; 
+    font-size: 15px; 
+    display: block; 
+    padding: 13px 0; 
+    padding-left: 3%; 
+}
+
+#search #list li a span { 
+    color: #ff6666; 
+    font-weight: bold; 
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
+/*recom - recommand/review*/
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
+
+#recom { 
+    padding: 68px 0 80px; 
+}
+
+#recom .wrap a { 
+    display: block; 
+    margin-bottom: 15px; 
+}
+
+#recom .wrap a figure { 
+    border: 1px solid #bbb; 
+    border-radius: 2px; 
+}
+
+#recom .wrap a figure img { 
+    width: 100%; 
+    height: auto; 
+    display: block; 
+}
+
+#recom .wrap a figure figcaption { 
+    padding: 1px 3px 4px; 
+}
+
+#recom .wrap a figure figcaption p { 
+    line-height: 1.6; 
+}
+
+#recom .wrap a figure figcaption p:first-child { 
+    color: #333; 
+    font-weight: bold; 
+}
+
+#recom .wrap a figure figcaption p:last-child { 
+    color: #666; 
+    font-size: 12px; 
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
+/*info - detail page example*/
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
+
+#info { 
+    position: relative; 
+}
+
+#info > img { 
+    width: 100%; 
+    height: auto; 
+    display: block; 
+    padding-top: 55px; 
+}
+
+#info .wrap { 
+    padding: 0 2%; 
+}
+
+#info .wrap div { 
+    border-bottom: 1px solid #ddd; 
+}
+
+#info .wrap div p:first-of-type { 
+    color: #777; 
+    font-size: 12px; 
+    margin: 10px 0 8px; 
+}
+
+#info .wrap div p:nth-of-type(2) { 
+    color: #666; 
+    font-size: 15px; 
+    background: #f7f7f7; 
+    border: 1px solid #888; 
+    border-radius: 3px; 
+    width: 60px; 
+    padding: 2px 0; 
+    text-align: center; 
+    margin-bottom: 10px; 
+}
+
+#info .wrap div span { 
+    color: #333; 
+    font-weight: bold; 
+    font-size: 20px; 
+    position: absolute; 
+    left: 70px; 
+    top: 22px; 
+}
+
+#info .wrap div a { 
+    position: absolute; 
+    right: 0; 
+    top: 8px; 
+}
+
+#info .wrap div a img { 
+    width: 37px; 
+    height: auto; 
+}
+
+#info .wrap > p { 
+    font-weight: bold; 
+    color: #ff6666; 
+    font-size: 18px; 
+    padding: 10px 0 10px; 
+}
+
+#info .wrap > p span { 
+    color: #ccc; 
+    text-decoration: line-through; 
+    font-size: 16px; 
+    font-weight: normal; 
+}
+
+#info > ul { 
+    text-align: center; 
+    border-top: 20px solid #eee; 
+    border-bottom: 20px solid #eee; 
+}
+
+#info > ul:after { 
+    content: ""; 
+    clear: both; 
+    display: block; 
+    height: 0; 
+    visibility: hidden; 
+}
+
+#info > ul li { 
+    float: left; 
+    width: 25%; 
+}
+
+#info > ul li a { 
+    display: block; 
+    height: 100%; 
+    padding: 15px 0; 
+}
+
+#info > ul li a img { 
+    width: 50px; 
+    height: auto; 
+}
+
+#info > ul li:last-of-type a img { 
+    width: 45px; 
+    height: auto; 
+}
+
+#info > ul li a p { 
+    font-size: 12px; 
+    color: #666; 
+    margin-top: 10px; 
+}
+
+#info > ul li:first-of-type a span { 
+    display: block; 
+    font-size: 35px; 
+    font-weight: bold; 
+    color: #ff6666; 
+}
+
+#info > ul li:nth-of-type(3) { 
+    position: relative; 
+    top: 7px; 
+}
+
+#info > ul li:last-of-type p { 
+    position: relative; 
+    bottom: 3px; 
+}
+
+#info #info_cont #tap { 
+    text-align: center; 
+    border-bottom: 1px solid #ddd; 
+    box-sizing: border-box; 
+}
+
+#info #info_cont #tap:after { 
+    content:""; 
+    clear: both; 
+    display: block; 
+    height: 0; 
+    visibility: hidden; 
+}
+
+#info #info_cont #tap li { 
+    float: left; 
+    width: 25%; }
+
+#info #info_cont #tap li a:link, 
+#info #info_cont #tap li a:visited { 
+    color: #666; 
+    font-size: 15px; 
+    font-weight: bold; 
+    display: block; 
+    height: 100%; 
+    height: 50px; 
+    box-sizing: border-box; 
+    line-height: 46px;
+}
+
+#info #info_cont #tap li a:hover, 
+#info #info_cont #tap li a:active, 
+#info #info_cont #tap li a:focus { 
+    color: #ff6666; 
+    border-bottom: 4px solid #ff6666; 
+}
+
+#info #info_cont #tap li .select { 
+    color: #ff6666; 
+    border-bottom: 4px solid #ff6666; 
+    box-sizing: border-box; 
+}
+
+#info #info_cont .wrap { 
+    margin-top: 7px; 
+}
+
+#info #info_cont .wrap article { 
+    margin-bottom: 20px; 
+}
+
+#info #info_cont .wrap article h3 { 
+    color: #333; 
+}
+
+#info #info_cont .wrap article p { 
+    color: #666; 
+    line-height: 1.4; 
+    font-size: 13px; 
+}
+
+#info #info_cont .wrap article p .blue { 
+    color: #4a6bb3; 
+}
+
+#info #info_cont .wrap article p .red { 
+    color: #e94343; 
+}
+
+#info #info_cont #btn { 
+    width: 100%; 
+}
+
+#info #info_cont #btn:after { 
+    content:""; 
+    clear: both; 
+    display: block; 
+    height: 0; 
+    visibility: hidden; 
+}
+
+#info #info_cont #btn li { 
+    float: left; 
+    border: 1px solid #ff6666; 
+    border-radius: 5px; 
+    box-sizing: border-box; 
+    text-align: center; 
+    width: 48% 
+}
+
+#info #info_cont #btn li:first-of-type { 
+    margin-right: 4%; 
+}
+
+#info #info_cont #btn li a { 
+    display: block;
+    height: 40px; 
+    line-height: 40px; 
+    color: #ff6666; 
+}
+
+#info #info_cont { 
+    padding-bottom: 180px;
+}
+
+#footer2 { 
+    position: fixed; 
+    bottom: 0; 
+    z-index: 10; 
+}
+
+#footer2 .wrap { 
+    width: 92%; 
+}
+
+#footer2 img { 
+    width: 100%; 
+    height: auto; 
+    position: relative; 
+    display: block; 
+}
+
+#footer2 a { 
+    display: block; 
+    text-align: center; 
+    background: #ff6666; 
+    width: 100%; 
+    margin: 0 auto; 
+    position: absolute; 
+    bottom: 10px; 
+    font-size: 20px; 
+    color: #fff; 
+    height: 45px; 
+    line-height: 42px; 
+}
+
+#pick { 
+    border-bottom: 16px solid #eee; 
+}
+
+#pick .wrap > p { 
+    font-size: 13px; 
+    color: #666; 
+    padding: 2px 0 5px;
+ }
+
+#pick .wrap > p span { 
+    font-weight: bold; 
+    font-size: 20px; 
+    color: #ff6666; 
+}
+
+#pick hr { 
+    border: none; 
+    border-bottom: 1px solid #ddd; 
+    margin-bottom: 10px; 
+}
+
+#pick .wrap:after { 
+    content: ""; 
+    clear: both; 
+    display: block; 
+    height: 0; 
+    visibility: hidden; 
+}
+
+#pick article { 
+    width: 25%; 
+    text-align: center; 
+    float: left; 
+}
+
+#pick article img { 
+    width: 80%; 
+    height: auto; 
+}
+
+#pick article p { 
+    font-size: 11px; 
+    color: #666; 
+    margin: 3px 0 15px; 
+}
+
+#genre { 
+    border-bottom: 16px solid #eee; 
+}
+
+#genre .wrap > p { 
+    font-size: 13px; 
+    color: #666; 
+    padding: 2px 0 5px; 
+}
+
+#genre .wrap > p span { 
+    font-weight: bold; 
+    font-size: 20px; 
+    color: #ff6666; 
+}
+
+#genre hr { 
+    border: none; 
+    border-bottom: 1px solid #ddd; 
+}
+
+#genre ul { 
+    width: 96%; 
+    margin: 0 auto; 
+    text-align: center; 
+    padding: 20px 0;
+}
+
+#genre ul:after { 
+    content: ""; 
+    clear: both; 
+    display: block; 
+    height: 0; 
+    visibility: hidden; 
+}
+
+#genre ul li { 
+    float: left; 
+    background: #f7f7f7; 
+    border: 1px solid #ccc; 
+    box-sizing: border-box; 
+    width: 32%; 
+    margin-right: 2%; 
+    border-radius: 2px; 
+    margin-bottom: 7px; 
+}
+
+#genre ul li:nth-of-type(3n) { 
+    margin-right: 0; 
+}
+
+#genre ul li:nth-of-type(3) ~ li { 
+    margin-bottom: 0; 
+}
+
+#genre ul li a { 
+    color: #666; 
+    font-size: 1.1em; 
+    padding: 5px 0; 
+    display: block; 
+}
+
+#ticket { 
+    margin-bottom: 30px; 
+}
+
+#ticket .wrap > p { 
+    font-size: 13px; 
+    color: #666; 
+    padding: 2px 0 5px; 
+}
+
+#ticket .wrap > p span { 
+    font-weight: bold; 
+    font-size: 20px; 
+    color: #ff6666; 
+}
+
+#ticket hr { 
+    border: none; 
+    border-bottom: 1px solid #ddd; 
+    margin-bottom: 15px; 
+}
+
+#ticket .wrap:after { 
+    content: ""; 
+    clear: both; 
+    display: block; 
+    height: 0; 
+    visibility: hidden; 
+}
+
+#ticket a { 
+    float: left; 
+    width: 48%; 
+    margin-right: 4%; 
+    position: relative; 
+    margin-bottom: 20px; 
+}
+
+#ticket a:nth-of-type(even) { 
+    margin-right: 0; 
+}
+
+#ticket a:nth-of-type(2) ~ a { 
+    margin-bottom: 0; 
+}
+
+#ticket article img { 
+    width: 100%; 
+    height: auto; 
+    display: block; 
+    margin-bottom: 6px; 
+}
+
+#ticket article span { 
+    display: inline-block; 
+}
+
+#ticket article span:first-of-type { 
+    font-size: 11px; 
+    color: #777; 
+    background: #f7f7f7; 
+    border: 1px solid #ddd; 
+    box-sizing: border-box; 
+    padding: 3px 6px; 
+    border-radius: 3px; 
+}
+
+#ticket article p:first-of-type { 
+    font-size: 16px; 
+    color: #666; 
+    position: absolute; 
+    right: 0; 
+    bottom: 22px; 
+}
+
+#ticket article p:nth-of-type(2) { 
+    font-size: 12px; 
+    color: #888; 
+    margin-top: 5px; 
+}
+
+#ticket article span:nth-of-type(2) { 
+    font-size: 15px; 
+    color: #ff6666; 
+    font-weight: bold; 
+    position: absolute; 
+    right: 0; 
+    bottom: 0;
+}
